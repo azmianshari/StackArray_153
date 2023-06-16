@@ -68,4 +68,12 @@ int main() {
 			s.push();
 			break;
 		}
+		case'2':
+			if (s.empty()) {
+				cout << "\nStackt is empty." << endl;
+				break;
+			}
+			s.pop();
+			break;
 		
+
