@@ -4,11 +4,37 @@ using namespace std;
 
 class StackArray {
 private:
-	int stack_array[5];
-
+	string stack_array[5];
+	int top;
 public:
 	//Construktor
 	StackArray() {
+		top = -1;
+	}
+	void push() {
+		cout << "\nEnter a element :";
+		string element;
+		getline(cin, element);
+
+		if (top == 4) { //Step 1
+			cout << "Number of data exceeds the limit." << endl;
+			return;
+		}
+		top++; //Step 2
+		stack_array[top]=element; //Step 3
+		cout << endl;
+		cout << element << "Ditambahkan(Pushed)" << endl;
+		
+		return element;
+	}
+	void pop() {
 
 	}
+
+	
+
 }
+
+
+	
+
