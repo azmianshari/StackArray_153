@@ -24,7 +24,7 @@ public:
 		stack_array[top] + element; //Step 3
 		cout << endl;
 		cout << element << "Ditambahkan(Pushed)" << endl;
-		return element;
+		
 	};
 	void pop() {
 		if(empty()) { //Step 1
@@ -36,7 +36,10 @@ public:
 
 	}
 };
+//Method for check if datas is empty
+bool empty() {
 
+}
 
 
 
