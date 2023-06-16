@@ -7,7 +7,7 @@ private:
 	string stack_array[5];
 	int top;
 public:
-	//Construktor
+	//Konstruktor
 	StackArray() {
 		top = -1;
 	}
@@ -21,19 +21,23 @@ public:
 			return;
 		}
 		top++; //Step 2
-		stack_array[top]=element; //Step 3
+		stack_array[top] + element; //Step 3
 		cout << endl;
 		cout << element << "Ditambahkan(Pushed)" << endl;
-		
 		return element;
-	}
+	};
 	void pop() {
+		if(empty()) { //Step 1
+			cout << "\nStack is empty. Cannot pop." << endl; //Step 1.a
+			return; //Step 1.b
+		}
+		cout << "\nThe popped element is :" << stack_array[top] << endl; //Step 2
+		top--; //Step 3
 
 	}
+};
 
-	
 
-}
 
 
 	
